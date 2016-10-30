@@ -1,0 +1,22 @@
+--cpu Cortex-M4.fp
+"extint configuration/\system_stm32f4xx.o"
+"extint configuration/\startup_stm32f407xx.o"
+"extint configuration/\main.o"
+"extint configuration/\stm32f4xx_it.o"
+"extint configuration/\stm32f4xx_hal_msp.o"
+"extint configuration/\stm32f4xx_hal_flash.o"
+"extint configuration/\stm32f4xx_hal_cortex.o"
+"extint configuration/\stm32f4xx_hal_rcc.o"
+"extint configuration/\stm32f4xx_hal_dma_ex.o"
+"extint configuration/\stm32f4xx_hal_rcc_ex.o"
+"extint configuration/\stm32f4xx_hal_flash_ex.o"
+"extint configuration/\stm32f4xx_hal_gpio.o"
+"extint configuration/\stm32f4xx_hal_pwr_ex.o"
+"extint configuration/\stm32f4xx_hal_flash_ramfunc.o"
+"extint configuration/\stm32f4xx_hal.o"
+"extint configuration/\stm32f4xx_hal_pwr.o"
+"extint configuration/\stm32f4xx_hal_dma.o"
+--library_type=microlib --strict --scatter "EXTINT Configuration/\.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".map" -o "EXTINT Configuration/\.axf"
